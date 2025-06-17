@@ -1,4 +1,4 @@
-![image]![Screenshot 2025-02-16 211252](https://github.com/user-attachments/assets/133233e1-5ad4-4b30-bb58-989c8e26a62d)
+![Screenshot 2025-02-16 211252](https://github.com/user-attachments/assets/133233e1-5ad4-4b30-bb58-989c8e26a62d)
 # 🚛 FleetFix – AI-Powered Vehicle Maintenance Predictor
 
 > ⚙️ **Smarter Fleets. Safer Roads. Lower Costs.**
