@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+
+body {
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+.content-container {
+    padding-top: 20px;
+    min-height: calc(100vh - 80px);
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 15px;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #333;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .profile-dropdown .dropdown-menu {
+      width: 200px;
+      right: 10px;
+    }
+}
+  
+  .logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9800;
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    background-color: #2196f3;
+  }
+  
+  .login-btn:hover {
+    background-color: #1976d2;
+  }
+  .profile-dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile-icon {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+  }
+  
+  .dropdown-menu p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu button:hover {
+    background: #cc0000;
+  }
+  

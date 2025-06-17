@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Maintenance Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .report-title {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .report-date {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #34495e;
+        }
+        .prediction-result {
+            padding: 15px;
+            background-color: {{ 'rgba(46, 204, 113, 0.1)' if not maintenance_need else 'rgba(231, 76, 60, 0.1)' }};
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        .prediction-status {
+            font-size: 20px;
+            font-weight: bold;
+            color: {{ '#2ecc71' if not maintenance_need else '#e74c3c' }};
+        }
+        .explanation {
+            white-space: pre-line;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="report-title">Vehicle Maintenance Prediction Report</h1>
+        <div class="report-date">Generated on: {{ generated_date }}</div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Vehicle Information</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Odometer Reading:</span> {{ features[1] }} km
+            </div>
+            <div class="info-item">
+                <span class="info-label">Current Payload:</span> {{ features[2] }} tons
+            </div>
+            <div class="info-item">
+                <span class="info-label">Fuel Consumption Rate:</span> {{ features[3] }} L/100km
+            </div>
+            <div class="info-item">
+                <span class="info-label">Engine Temperature:</span> {{ features[5] }}°C
+            </div>
+            <div class="info-item">
+                <span class="info-label">Oil Pressure:</span> {{ features[6] }} psi
+            </div>
+            <div class="info-item">
+                <span class="info-label">ABS Status:</span> {{ 'ON' if features[9] == 1 else 'OFF' }}
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Prediction Results</h2>
+        <div class="prediction-result">
+            <div class="prediction-status">
+                Maintenance Need: {{ 'Yes' if maintenance_need else 'No' }}
+            </div>
+            <div class="maintenance-urgency">
+                <span class="info-label">Maintenance Probability:</span> {{ '%.1f' % (maintenance_percentage * 100) }}%
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">AI Analysis</h2>
+        <div class="explanation">
+            {{ explanation }}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "vehicle-maintenance-prediction",
+  "version": "1.0.0",
+  "description": "Vehicle Maintenance Prediction System",
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "install-deps": "cd frontend && npm install"
+  },
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

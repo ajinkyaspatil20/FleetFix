@@ -1,0 +1,191 @@
+/* Centering the form */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+    /* background: url('/images/signup-bg12.png') no-repeat center center; */
+    background-size: cover;
+  }
+  
+  .signup-box {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;  /* Reduce the gap between checkbox and text */
+    font-size: 14px;
+    margin: 10px 0;
+    white-space: nowrap; /* Ensure text stays in one line */
+  }
+  
+  .checkbox-container input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  .checkbox-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .terms {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .terms:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  .signup-btn {
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Separator */
+  .separator {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .separator hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .separator span {
+    font-size: 12px;
+    color: #888;
+    margin: 0 10px;
+  }
+  
+  /* Google Button */
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .google-btn img {
+    width: 20px;
+    margin-right: 8px;
+  }
+  
+  .google-btn:hover {
+    background-color: #f1f1f1;
+  }
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.terms-label {
+  display: flex;
+  align-items:center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.terms-label input {
+  margin-right: 8px;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  
+  .terms-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns to the right */
+    margin: 10px 0;
+  }
+  
+  .terms-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .terms-label input {
+    margin-right: 8px;
+  }
+  
