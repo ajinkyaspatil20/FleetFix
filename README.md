@@ -3,7 +3,7 @@
 
 > ⚙️ **Smarter Fleets. Safer Roads. Lower Costs.**
 
-![FleetFix Banner]![Screenshot 2025-02-16 200007](https://github.com/user-attachments/assets/571f9d2b-90d2-4a60-9767-f5fa9343c861)
+![Screenshot 2025-02-16 200007](https://github.com/user-attachments/assets/571f9d2b-90d2-4a60-9767-f5fa9343c861)
  <!-- 📸 Add a clean project banner here -->
 
 ---
